@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="length.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+<body>
+    
+<!--length, mass, -->
+
+
+    <div class="vh-100 container-fluid">
+        
+    <h1 style="color: black;">Measurement of Length</h1>
+    <form>
+        
+        <label  for="input">Value:</label>
+        <input  type="number" id="input" oninput="convert()" >
+        <select id="input_unit" onchange="convert()">
+            <option value="mm">Millimeters</option>
+            <option value="cm">Centimeters</option>
+            <option value="m">Meter</option>
+            <option value="ft">Feet</option>
+            <option value="km">Kilometers</option>
+        </select>
+        <br>
+        <label for="output">Output:</label>
+        <input style="color: #ff5f01;" type="number" id="output" readonly >
+        <select id="output_unit" onchange="convert()">
+            <option value="mm">Millimeters</option>
+            <option value="cm">Centimeters</option>
+            <option value="m">Meter</option>
+            <option value="ft">Feet</option>
+            <option value="km">Kilometers</option>
+        </select>
+    </form>
+
+
+</div>
+
+
+
+<div class="vh-100 container-fluid_1">
+
+    <h1 style="color: #F5F5DC;">Mass/Weight Measurement</h1>
+    <form>
+        <label style="color: #F5F5DC;" for="input1">Value:</label>
+        <input type="number" id="input1" oninput="convertMass()">
+        <select id="input_unit1" onchange="convertMass()">
+            <option value="mg">Milligrams</option>
+            <option value="cg">Centigrams</option>
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+            <option value="t">Tons</option>
+        </select>
+        <br>
+        <label style="color: #F5F5DC;" for="output1">Output:</label>
+        <input style="color: #D2B48C;" type="number" id="output1" readonly>
+        <select id="output_unit1" onchange="convertMass()">
+            <option value="mg">Milligrams</option>
+            <option value="cg">Centigrams</option>
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+            <option value="t">Tons</option>
+        </select>
+    </form>
+
+</div>
+
+
+<div class="vh-100 container-fluid_2">
+
+    <h1>Capacity Measurement</h1>
+    <form>
+        <label for="input2">Value:</label>
+        <input type="number" id="input2" oninput="convertCapacity()">
+        <select id="input_unit2" onchange="convertCapacity()">
+            <option value="ml">Milliliters</option>
+            <option value="cl">Centiliters</option>
+            <option value="l">Liter</option>
+            <option value="kl">Kiloliters</option>
+        </select>
+        <br>
+        <label for="output2">Output:</label>
+        <input style="color:#008080 ;" type="number" id="output2" readonly>
+        <select id="output_unit2" onchange="convertCapacity()">
+            <option value="ml">Milliliters</option>
+            <option value="cl">Centiliters</option>
+            <option value="l">Liter</option>
+            <option value="kl">Kiloliters</option>
+        </select>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+    <script src="length.js"></script>
+    <script src="mass.js"></script>
+    <script src="capacity.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

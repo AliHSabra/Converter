@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    min-width: 615px;
+}
+
+h1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 100px;
+    
+}
+
+label{
+    font-size: 50px;
+}
+
+[id^='input']:not(#input_unit):not(#input_unit1):not(#input_unit2){
+    margin-left: 36px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50%;
+}
+#input_unit, #output_unit, #input_unit1, #output_unit1, #input_unit2, #output_unit2{
+    width: 103px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    width: 200px;
+}
+
+[id^='output']:not(#output_unit):not(#output_unit1):not(#output_unit2){
+    width: 50%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+
+
+.container-fluid{
+    background-image:url("markus-spiske-pwpVGQ-A5qI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+}
+.container-fluid_1{
+    background-image:url("calum-macaulay-TU1b56dfn2A-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center bottom 
+}
+.container-fluid_2{
+    background-image:url("steve-johnson-WUxwvpyJ65M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center top;
+}
+
